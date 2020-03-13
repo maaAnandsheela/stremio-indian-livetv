@@ -1,0 +1,17 @@
+{
+    "version": 2,
+    "name": "stremio-indian-livetv",
+    "builds": [
+        { "src": "*.php", "use": "now-php" }
+    ],
+	"rewrites": [
+    { "source": "/manifest.json", "destination": "/manifest.php" },
+    { "source": "/meta/(.*)/(.*)/(.*).json", "destination": "/metas.php?type=$1&id=$2&extra=$3" },
+    { "source": "/meta/(.*)/(.*).json", "destination": "/metas.php?type=$1&id=$2" },
+	{ "source": "/stream/(.*)/(.*)/(.*).json", "destination": "/streams.php?type=$1&id=$2&extra=$3" },
+	{ "source": "/stream/(.*)/(.*).json", "destination": "/streams.php?type=$1&id=$2" },
+	{ "source": "/catalog/(.*)/(.*)/(.*).json", "destination": "/catalogs.php?type=$1&id=$2&extra=$3" },
+    { "source": "/catalog/(.*)/(.*).json", "destination": "/catalogs.php?type=$1&id=$2" }
+  ],
+  "regions" : ["bom1"]
+}
