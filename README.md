@@ -5,7 +5,7 @@ This is a [Stremio](https://www.stremio.com/) add-on for Indian Live TV channels
 
 It is a php and apache app and can be run on major free hosting service.
 
-Demo : https://stremio-indian-livetv.now.sh/manifest.json
+Demo : https://stremio-indian-livetv-eta.now.sh/manifest.json
 
 ## Features
 
