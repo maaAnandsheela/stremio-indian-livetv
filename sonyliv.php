@@ -110,7 +110,7 @@ function liv_parse_m3u8($url) {
 			}
 		}
 		if (!empty($s['1']) && $yupp) {
-			$s['1'] = str_replace("../../","https://sony-yupp.akamaized.net/hls/live/",$s['1']);
+			$s['1'] = str_replace("../../","https://sony247channels.akamaized.net/hls/live/",$s['1']);
 		}
 		$streams[$c]['res'] = $res['4'];
         $streams[$c]['url'] = $s['1'];	
